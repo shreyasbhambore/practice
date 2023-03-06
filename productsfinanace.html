@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+//Define an array of products
+let products = [
+  {
+	  "productnumber":1,
+    "name": "Sony Tv",
+    "price": 200000,
+    "image": "tv.jpg",
+    "features": [
+    	"Capacity: 280 Litres",
+    	"Frost-free Cooling Technology",
+    	"4-star Energy Rating",
+    	"Convertible Freezer",
+    	"IntelliSense Inverter Compressor"
+    	]
+  },
+  {
+	  "productnumber":2,
+	  "name": "Mobile",
+    "price": 250000,
+    "image": "mobile.png",
+    "features": [
+    	"Capacity: 280 Litres",
+    	"Frost-free Cooling Technology",
+    	"4-star Energy Rating",
+    	"Convertible Freezer",
+    	"IntelliSense Inverter Compressor"
+    	]
+  },
+  {
+	  "productnumber":3,
+	  "name": "Dell Laptop",
+    "price": 280000,
+    "image": "lap.jpg",
+    "features": [
+    	"Capacity: 280 Litres",
+    	"Frost-free Cooling Technology",
+    	"4-star Energy Rating",
+    	"Convertible Freezer",
+    	"IntelliSense Inverter Compressor"
+    	]
+  },
+  {
+	  "productnumber":4,
+	  "name": "Prestige 70",
+    "price": 150000,
+    "image": "owen.jpg",
+    "features": [
+    	"Capacity: 280 Litres",
+    	"Frost-free Cooling Technology",
+    	"4-star Energy Rating",
+    	"Convertible Freezer",
+    	"IntelliSense Inverter Compressor"
+    	]
+  },
+  {
+	  "productnumber":5,
+	  "name": "LG 8790",
+    "price": 160000,
+    "image": "wm.png",
+    "features": [
+    	"Capacity: 280 Litres",
+    	"Frost-free Cooling Technology",
+    	"4-star Energy Rating",
+    	"Convertible Freezer",
+    	"IntelliSense Inverter Compressor"
+    	]
+  },
+  {
+	  "productnumber":6,
+	  "name": "Marshal SE 98",
+    "price": 175000,
+    "image": "speaker.jpg",
+    features: [
+    	"Capacity: 280 Litres",
+    	"Frost-free Cooling Technology",
+    	"4-star Energy Rating",
+    	"Convertible Freezer",
+    	"IntelliSense Inverter Compressor"
+    	]
+  },
+  {
+	  "productnumber":7,
+	  "name": "Whirlpool",
+"price": 155000,
+"image": "fri.png",
+"description": "Whirlpool Refrigerator with 4-star energy rating and frost-free cooling technology.",
+"features": [
+"Capacity: 280 Litres",
+"Frost-free Cooling Technology",
+"4-star Energy Rating",
+"Convertible Freezer",
+"IntelliSense Inverter Compressor"
+]
+},
+{
+	 "productnumber":8,
+"name": "Voltas",
+"price": 199999,
+"image": "ac.png",
+"description": "Voltas Inverter Split AC with 5-star energy rating and high ambient cooling.",
+"features": [
+"Capacity 1.5 Ton",
+"Inverter Compressor",
+"5-star Energy Rating",
+"High Ambient Cooling",
+"Copper Condenser Coil"
+]
+}
+];
+
+document.writeln('<table border="5 " cellspacing=10 cellpadding=10>');
+document.writeln('<tr>');
+document.writeln('<th>productnumber</th> ');
+document.writeln('<th>name</th> ');
+document.writeln('<th>price</th> ');
+document.writeln('<th>image</th> ');
+document.writeln('<th>features</th> ');
+document.writeln('</tr>');
+
+for(let i=0;i<products.length;i++){
+	
+
+	document.writeln('<tr> ');
+	document.writeln('<td>'+ products[i].productnumber +'</td>');
+	document.writeln('<td>'+ products[i].name +'</td>');
+	document.writeln('<td>'+ products[i].price +'</td>');
+	document.writeln('<td>'+ products[i].image +'</td>');
+	document.writeln('<td>');
+	document.writeln('<table border="3 " cellspacing=5 cellpadding=5>');
+
+	document.writeln('<tr>');
+	document.writeln('<th>feature1</th> ');
+	document.writeln('<th>feature1</th> ');
+	document.writeln('<th>feature1</th> ');
+	document.writeln('<th>feature1</th> ');
+	document.writeln('<th>feature1</th> ');
+	document.writeln('</tr>');
+
+	document.writeln('<tr>');
+	document.writeln('<td>'+products[i].features[0]+'</td> ');
+	document.writeln('<td>'+products[i].features[1]+'</td> ');
+	document.writeln('<td>'+products[i].features[2]+'</td> ');
+	document.writeln('<td>'+products[i].features[3]+'</td> ');
+	document.writeln('<td>'+products[i].features[4]+'</td> ');
+	document.writeln('</tr>');
+	document.writeln('</table>');
+
+	document.writeln('</td>');
+	document.writeln('</tr> ');
+	
+	
+	
+}
+
+document.writeln('</table>');
+</script>
+
+</body>
+</html>

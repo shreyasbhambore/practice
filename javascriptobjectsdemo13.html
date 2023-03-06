@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+
+let bankaccobj={
+		"accountnumber":1234,
+		"accountholder":"shreyas",
+		"accountbalance":5000,
+		"accountopendate":'2021-04-25',
+		
+		
+		"accountadress":{
+			"area":'vijaya nagara',
+			"housenumber":423,
+			"landmark":"near watertank",
+			"pincode":581355
+		}
+		
+};
+
+document.writeln('<table border="5 " cellspacing=10 cellpadding=10>');
+document.writeln('<tr>');
+document.writeln('<th>account number</th> ');
+document.writeln('<th>account holder</th> ');
+document.writeln('<th>account balance</th> ');
+document.writeln('<th>account open date</th> ');
+document.writeln('</tr>');
+
+document.writeln('<tr> ');
+document.writeln('<td>'+ bankaccobj.accountnumber +'</td>');
+document.writeln('<td>'+ bankaccobj.accountholder +'</td>');
+document.writeln('<td>'+ bankaccobj.accountbalance +'</td>');
+document.writeln('<td>'+ bankaccobj.accountopendate +'</td>');
+document.writeln('</tr> ');
+
+
+document.writeln('<tr>');
+document.writeln('<th>area</th> ');
+document.writeln('<th>housenumber</th> ');
+document.writeln('<th>Landmark</th> ');
+document.writeln('<th>pincode</th> ');
+document.writeln('</tr>');
+document.writeln('<tr> ');
+document.writeln('<td>'+ bankaccobj.accountadress.area +'</td>');
+document.writeln('<td>'+ bankaccobj.accountadress.housenumber +'</td>');
+document.writeln('<td>'+ bankaccobj.accountadress.landmark +'</td>');
+document.writeln('<td>'+ bankaccobj.accountadress.pincode +'</td>');
+document.writeln('</tr> ');
+
+
+document.writeln('</table>');
+
+
+/---------------------------------------/
+
+document.writeln('<table border="5 " cellspacing=10 cellpadding=10>');
+document.writeln('<tr>');
+document.writeln('<th>account number</th> ');
+document.writeln('<th>account holder</th> ');
+document.writeln('<th>account balance</th> ');
+document.writeln('<th>account open date</th> ');
+document.writeln('</tr>');
+
+document.writeln('<tr> ');
+document.writeln('<td>'+ bankaccobj.accountnumber +'</td>');
+document.writeln('<td>'+ bankaccobj.accountholder +'</td>');
+document.writeln('<td>'+ bankaccobj.accountbalance +'</td>');
+document.writeln('<td>'+ bankaccobj.accountopendate +'</td>');
+document.writeln('</tr> ');
+
+
+document.writeln('<tr>');
+document.writeln('<th>area</th> ');
+document.writeln('<th>housenumber</th> ');
+document.writeln('<th>Landmark</th> ');
+document.writeln('<th>pincode</th> ');
+document.writeln('</tr>');
+document.writeln('<tr> ');
+document.writeln('<td>'+ bankaccobj.accountadress.area +'</td>');
+document.writeln('<td>'+ bankaccobj.accountadress.housenumber +'</td>');
+document.writeln('<td>'+ bankaccobj.accountadress.landmark +'</td>');
+document.writeln('<td>'+ bankaccobj.accountadress.pincode +'</td>');
+document.writeln('</tr> ');
+
+
+document.writeln('</table>');
+
+
+</script>
+</body>
+
+</html>

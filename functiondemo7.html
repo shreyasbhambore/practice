@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+function showmessage(from, text){
+	from ='*' + from + '*';  alert(from + ';'+ text);
+	
+}
+let from ="anna";
+showmessage(from, ",hello");
+
+/-----------------------------------------/
+
+alert(from );
+function showmessage1(from, text="no text given");
+showmessage1("anna",text);
+showmessage1("jack");
+showmessage1("jack","this is a new line");
+/--------------------------------------/
+ 
+ function anotherfunction(){return 'end user';}
+ function showmessage2(from,text=anothrfunction()){
+ alert(from +":"+text);
+ }
+ showmessage2("shreyas"); showmessage2("ganesh","admin user");
+ 
+
+</script>
+
+</body>
+</html>

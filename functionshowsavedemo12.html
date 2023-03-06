@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+function showdialog(question,ok,cancel){
+if(confirm(question)){
+ok();
+} else{cancel();}
+
+
+}
+
+showdialog("do you wish to save?",
+		function (){
+	alert("yes i want to save!!!");
+                    },
+function(){
+	alert("no i dont want to save!!!");
+          }
+           );
+           
+
+showdialog("confirm do you want to jump in water..",
+		function (){
+	alert("yes i want to jump and save !!!");
+                    },
+function(){
+	alert("no i cant jump!!!");
+          }
+           );
+          
+
+
+
+</script>
+</body>
+</html>
